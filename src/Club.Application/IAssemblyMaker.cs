@@ -1,6 +1,4 @@
 ﻿namespace Club.Application;
-
-public class Class1
+internal interface IAssemblyMaker
 {
-
 }

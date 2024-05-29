@@ -17,7 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Club.APIs\Club.APIs.csproj" />
     <ProjectReference Include="..\..\src\Club.Application\Club.Application.csproj" />
     <ProjectReference Include="..\..\src\Club.Domain\Club.Domain.csproj" />
     <ProjectReference Include="..\..\src\Club.Infrastructure\Club.Infrastructure.csproj" />
