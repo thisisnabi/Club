@@ -44,9 +44,12 @@ public sealed class Profile : AggregateRootBase<ProfileId>
 
     public void AddSocial(Social social)
     {
-       if(_socials.Any(x => x == social))
+        if (_socials.Any(x => x == social))
             throw new Exception("What are you doing baby!");
 
-       _socials.Add(social);
+        _socials.Add(social);
     }
+
+    public void RaiseClubCreatedEvent(ClubId clubId) =>
+        AddEvent(new ClubCreatedEvent(Id, clubId));
 }
